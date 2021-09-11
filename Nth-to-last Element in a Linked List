@@ -1,0 +1,24 @@
+Given a linked list, and an input n, write a function that returns the nth-to-last element of the linked list.
+
+eg.
+
+list = 10 -> 20 -> 30 -> 40 -> 50
+n = 1 output=40
+n = 2 output=30
+n = 3 output=20
+#include <iostream>
+
+using namespace std;
+
+int main ()
+{
+  int len = 5;
+  int list[len] = { 10, 20, 30, 40, 50 };
+  int n;
+  // cout<<list[2];
+  cout << "Enter number ";
+  cin >> n;
+  int res = (len - 1) - n;
+  cout << "resdult = " << list[res];
+
+}
